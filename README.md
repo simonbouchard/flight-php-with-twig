@@ -27,6 +27,6 @@ License
 
 MIT
 
-[flight-php]: <http://flightphp.com>
+[flight]: <http://flightphp.com>
 [Sass]: <http://sass-lang.com>
 [Twig]: <https://twig.symfony.com>
