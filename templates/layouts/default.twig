@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="/public/img/apple-touch-icon.png">
+        <link rel="stylesheet" href="/public/css/style.min.css" />
+        <script src="/public/js/modernizr-2.8.3.min.js"></script>
+    {% endblock %}
+</head>
+<body class="{{bodyClass}}">
+
+    <div class="app">
+
+      <header class="site-header">
+          {% block header %}{% endblock %}
+      </header> <!-- // header -->
+
+      {% block content %}{% endblock %}
+
+      <footer class="site-footer">
+          {% block footer %}
+            &copy; Built by {{ "now"|date("Y") }} by <a href="https://simonbouchard.com" title="Simon Bouchard">Simon Bouchard</a>.
+          {% endblock %}
+      </footer> <!-- // footer -->
+
+    </div> <!-- // app -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/public/js/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="/public/js/vendors.min.js"></script>
+    <script src="/public/js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "name": "boilerplate-flight-php-twig",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Simon Bouchard <info@simonbouchard.com>",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "app/bower_components"
+    ],
+    "devDependencies": {},
+    "dependencies": {
+    }
+}
